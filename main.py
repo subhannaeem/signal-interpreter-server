@@ -1,4 +1,4 @@
-from route import signal_interpreter_app, json_parser
+from common.route import signal_interpreter_app, json_parser
 from argparse import ArgumentParser
 
 

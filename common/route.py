@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from json_parser import JsonParser
+from common.json_parser import JsonParser
 
 
 signal_interpreter_app = Flask(__name__)

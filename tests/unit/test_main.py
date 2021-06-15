@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from common.main import main, ArgumentParser, parse_arguments
+from main import main, ArgumentParser, parse_arguments
 from common.route import JsonParser, signal_interpreter_app
 
 
