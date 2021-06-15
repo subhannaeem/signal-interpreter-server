@@ -19,5 +19,6 @@ def test_post():
 @signal_interpreter_app.route("/getSignal", methods=["POST"])
 def interpret_signal():
     data = request.get_json()
+    print(data)
     signal_title = json_parser.get_title(data["signal_id"])
     return jsonify(signal_title)
