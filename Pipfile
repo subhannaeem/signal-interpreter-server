@@ -5,9 +5,9 @@ name = "pypi"
 
 [packages]
 flask = "*"
+pytest = "*"
 
 [dev-packages]
-pytest = "*"
 mock = "*"
 flask = "*"
 
