@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 signal_interpreter_app = Flask(__name__)
 
@@ -8,6 +8,7 @@ def hello():
     return "Hello World!!"
 
 
-@signal_interpreter_app.route("/testPost", methods=["POST"])
+@signal_interpreter_app.route("/", methods=["POST"])
 def test_post():
-    return "Hello World from Test Post call!!"
+    data = request.get_json()
+    return data
